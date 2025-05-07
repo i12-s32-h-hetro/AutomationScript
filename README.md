@@ -10,6 +10,17 @@ This project uses **Selenium with Python** to automate the shopping process on [
 - Clicks the **"Pay with Card"** button (Stripe integration)
 - (Optional) Fills out the Stripe payment form (disabled in this version)
 
+## 🧑‍💻 Scenarios Covered
+
+1. **Website Launch and Temperature Check**  
+   - Upon clicking the website link, the temperature of the location is **automatically visible** as part of the page loading process.
+
+2. **Sunscreen Product Button**  
+   - When the user clicks the **Sunscreen product button**, a **random item is added to the cart**. This is done automatically through the script to simulate a real user selecting a product.
+
+3. **Moisturizer Button and Cart Bug**  
+   - When the user clicks the **Moisturizer button** and selects the **same item twice**, it **throws a bug**. The bug is that the **price does not increase** even when the same product is added multiple times. This bug has been identified in the shopping cart functionality.
+
 ## Bug Found through Automation
 
 When adding a product to the cart twice (or more), the **price of the product does not increase** as expected. This is a bug on the website where the price remains fixed even though multiple items are added to the cart. It may affect users who intend to purchase more than one unit of the same product.
