@@ -1,18 +1,18 @@
-# AutomationScript
-
-https://weathershopper.pythonanywhere.com/
-
-#  WeatherShopper Automation
+# WeatherShopper Automation
 
 This project uses **Selenium with Python** to automate the shopping process on [WeatherShopper](https://weathershopper.pythonanywhere.com/), an e-commerce demo site for testing automation tools.
 
-##  Features
+## Features
 
 - Opens the moisturizer or sunscreen page
 - Adds a product to the cart
 - Navigates to the cart
 - Clicks the **"Pay with Card"** button (Stripe integration)
 - (Optional) Fills out the Stripe payment form (disabled in this version)
+
+## Bug Found through Automation
+
+When adding a product to the cart twice (or more), the **price of the product does not increase** as expected. This is a bug on the website where the price remains fixed even though multiple items are added to the cart. It may affect users who intend to purchase more than one unit of the same product.
 
 ##  Requirements
 
@@ -21,7 +21,7 @@ This project uses **Selenium with Python** to automate the shopping process on [
 - ChromeDriver (matching your browser version)
 - Selenium
 
-## 📦 Installation
+## Installation
 
 1. **Clone this repository**:
     ```bash
@@ -38,9 +38,10 @@ This project uses **Selenium with Python** to automate the shopping process on [
     - Get the version matching your Chrome from: https://sites.google.com/chromium.org/driver/
     - Place it in your PATH or project folder.
 
-## 🚀 Usage
+## Usage
 
 Run the automation script with:
 
 ```bash
 python weathershopper_bot.py
+
